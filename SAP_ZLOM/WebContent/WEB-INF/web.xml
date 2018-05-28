@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="3.0"
+ xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+ <display-name>Archetype Created Web Application</display-name>
+ <servlet>
+  <display-name>SzukajPodsumowanie</display-name>
+  <servlet-name>SzukajPodsumowanie</servlet-name>
+  <servlet-class>kontroler.SzukajPodsumowanie</servlet-class>
+ </servlet>
+ <servlet>
+  <display-name>SzukajPodsumowanieDaty</display-name>
+  <servlet-name>SzukajPodsumowanieDaty</servlet-name>
+  <servlet-class>kontroler.SzukajPodsumowanieDaty</servlet-class>
+ </servlet>
+ <servlet-mapping>
+  <servlet-name>SzukajPodsumowanie</servlet-name>
+  <url-pattern>/SzukajPodsumowanie</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>SzukajPodsumowanieDaty</servlet-name>
+  <url-pattern>/SzukajPodsumowanieDaty</url-pattern>
+ </servlet-mapping>
+</web-app>

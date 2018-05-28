@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="SAP_ZLOM">
+		<class>encje.Czesc</class>
+		<class>encje.CzescZlecenie</class>
+		<class>encje.Podsumowanie</class>
+		<class>encje.PodsumowanieZezlomowanie</class>
+		<class>encje.Produkcja</class>
+		<class>encje.ProdukcjaZlecenie</class>
+		<class>encje.Uzytkownik</class>
+		<class>encje.Zezlomowanie</class>
+		<class>encje.Zlecenie</class>
+		<class>encje.Zmywarka</class>
+		<class>encje.ZmywarkaProdukcja</class>
+		<class>encje.PodsumowanieSkumulowane</class>
+	<properties>
+			<property name="hibernate.connection.username" value="sa"/>
+			<property name="hibernate.connection.password" value="praktyka"/>
+			<property name="hibernate.connection.url" value="jdbc:sqlserver://localhost:1433;databaseName=SAP_ZLOM"/>
+			<property name="hibernate.connection.driver_class" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+			<property name="hibernate.ejb.cfgfile" value="hibernate.cfg.xml"/>
+		</properties>
+	</persistence-unit>
+</persistence>
